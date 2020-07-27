@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Start Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <style>
+      body {
+        background: #c0c0c0;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        margin: 0;
+      }
+
+      a {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 15px;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      .window {
+        width: 150px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">Electronics</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <a href="https://hackaday.com/blog">Hackaday Blog</a>
+          <a href="https://hackaday.io">Hackaday.io</a>
+          <a href="https://reddit.com/r/fpga">Reddit FPGA</a>
+          <a href="https://reddit.com/r/electronics">Reddit Electronics</a>
+          <a href="https://edaboard.com">edaboard</a>
+          <a href="https://www.eevblog.com/forum/index.php">EEVBlog forum</a>
+        </div>
+      </div>
+
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">Misc</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <a href="https://youtube.com">Youtube</a>
+          <a href="https://gmail.com">Gmail</a>
+          <a href="https://sheets.google.com">Sheets</a>
+          <a href="https://mercadolivre.com">Mercado Livre</a>
+        </div>
+      </div>
+
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">Programming</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <a href="https://github.com">GitHub</a>
+          <a href="https://stackoverflow.com/questions">StackOverflow</a>
+          <a href="https://developer.mozilla.org/en-US/">MDN web docs</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
