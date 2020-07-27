@@ -13,7 +13,6 @@
 
       a {
         display: block;
-        margin-bottom: 10px;
         font-size: 15px;
       }
 
@@ -22,8 +21,19 @@
       }
 
       .window {
-        width: 150px;
+        width: 200px;
         margin: 10px;
+      }
+
+      .link-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .favicon {
+        margin-right: 10px;
+        width: 15px;
       }
     </style>
   </head>
@@ -38,12 +48,30 @@
           </div>
         </div>
         <div class="window-body">
-          <a href="https://hackaday.com/blog">Hackaday Blog</a>
-          <a href="https://hackaday.io">Hackaday.io</a>
-          <a href="https://reddit.com/r/fpga">Reddit FPGA</a>
-          <a href="https://reddit.com/r/electronics">Reddit Electronics</a>
-          <a href="https://edaboard.com">edaboard</a>
-          <a href="https://www.eevblog.com/forum/index.php">EEVBlog forum</a>
+          <div class="link-container">
+            <img class="favicon" src="https://hackaday.com/favicon.ico" />
+            <a href="https://hackaday.com/blog">Hackaday Blog</a>
+          </div>
+          <div class="link-container">
+            <img class="favicon" src="https://hackaday.com/favicon.ico" />
+            <a href="https://hackaday.io">Hackaday.io</a>
+          </div>
+          <div class="link-container">
+            <img class="favicon" src="https://reddit.com/favicon.ico" />
+            <a href="https://reddit.com/r/fpga">Reddit FPGA</a>
+          </div>
+          <div class="link-container">
+            <img class="favicon" src="https://reddit.com/favicon.ico" />
+            <a href="https://reddit.com/r/electronics">Reddit Electronics</a>
+          </div>
+          <div class="link-container">
+            <img class="favicon" src="https://edaboard.com/favicon.ico" />
+            <a href="https://edaboard.com">edaboard</a>
+          </div>
+          <div class="link-container">
+            <img class="favicon" src="https://eevblog.com/favicon.ico" />
+            <a href="https://www.eevblog.com/forum/index.php">EEVBlog forum</a>
+          </div>
         </div>
       </div>
 
@@ -55,10 +83,31 @@
           </div>
         </div>
         <div class="window-body">
-          <a href="https://youtube.com">Youtube</a>
-          <a href="https://gmail.com">Gmail</a>
-          <a href="https://sheets.google.com">Sheets</a>
-          <a href="https://mercadolivre.com">Mercado Livre</a>
+          <div class="link-container">
+            <img class="favicon" src="https://youtube.com/favicon.ico" />
+            <a href="https://youtube.com">Youtube</a>
+          </div>
+          <div class="link-container">
+            <img
+              class="favicon"
+              src="https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon5.ico"
+            />
+            <a href="https://gmail.com">Gmail</a>
+          </div>
+          <div class="link-container">
+            <img
+              class="favicon"
+              src="https://ssl.gstatic.com/docs/spreadsheets/favicon.ico"
+            />
+            <a href="https://sheets.google.com">Sheets</a>
+          </div>
+          <div class="link-container">
+            <img
+              class="favicon"
+              src="https://http2.mlstatic.com/ui/navigation/5.7.1/mercadolibre/favicon.ico "
+            />
+            <a href="https://mercadolivre.com">Mercado Livre</a>
+          </div>
         </div>
       </div>
 
@@ -70,9 +119,21 @@
           </div>
         </div>
         <div class="window-body">
-          <a href="https://github.com">GitHub</a>
-          <a href="https://stackoverflow.com/questions">StackOverflow</a>
-          <a href="https://developer.mozilla.org/en-US/">MDN web docs</a>
+          <div class="link-container">
+            <img class="favicon" src="https://github.com/favicon.ico " />
+            <a href="https://github.com">GitHub</a>
+          </div>
+          <div class="link-container">
+            <img class="favicon" src="https://stackoverflow.com/favicon.ico " />
+            <a href="https://stackoverflow.com/questions">StackOverflow</a>
+          </div>
+          <div class="link-container">
+            <img
+              class="favicon"
+              src="https://developer.mozilla.org/favicon.ico "
+            />
+            <a href="https://developer.mozilla.org/en-US/">MDN web docs</a>
+          </div>
         </div>
       </div>
     </div>
