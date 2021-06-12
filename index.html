@@ -1,45 +1,79 @@
 <html>
-  <head>
-    <title>Start Page</title>
-    <link rel="stylesheet" href="https://unpkg.com/98.css" />
-    <style>
-      body {
-        background: #c0c0c0;
-        height: 100%;
-        display: grid;
-        place-items: center;
-        margin: 0;
-      }
 
-      a {
-        display: block;
-        font-size: 15px;
-      }
+<head>
+  <title>Start Page</title>
+  <link rel="stylesheet" href="98.css" />
+  <style>
+    body {
+      background: #c0c0c0;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      margin: 0;
+    }
 
-      .container {
-        display: flex;
-      }
+    a {
+      display: block;
+      font-size: 11px;
+    }
 
-      .window {
-        width: 200px;
-        margin: 10px;
-      }
+    input {
+      margin-left: 5px;
+    }
 
-      .link-container {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-      }
+    .flex {
+      display: flex;
+    }
 
-      .favicon {
-        margin-right: 10px;
-        width: 15px;
-      }
-    </style>
-  </head>
+    .row {
+      display: flex;
+      justify-content: center;
+    }
 
-  <body>
-    <div class="container">
+    .window {
+      width: 200px;
+      margin: 10px;
+    }
+
+    .link-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-left: 0px;
+    }
+
+    .favicon {
+      margin-right: 10px;
+      width: 15px;
+    }
+
+    .ambientes {
+      width: 650px;
+    }
+
+    .ambientes fieldset {
+      display: inline-block;
+      width: 180px;
+    }
+
+    .ambientes .window-body {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .pesquisas a {
+      width: 50px;
+    }
+
+    .pesquisas input {
+      width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="row">
       <div class="window">
         <div class="title-bar">
           <div class="title-bar-text">Electronics</div>
@@ -82,33 +116,53 @@
             <button aria-label="Close"></button>
           </div>
         </div>
-        <div class="window-body">
-          <div class="link-container">
-            <img class="favicon" src="https://youtube.com/favicon.ico" />
-            <a href="https://youtube.com">Youtube</a>
+        <div class="flex">
+          <div class="window-body">
+            <div class="link-container">
+              <img class="favicon" src="https://youtube.com/favicon.ico" />
+              <a href="https://youtube.com">Youtube</a>
+            </div>
+            <div class="link-container">
+              <img class="favicon" src="https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon5.ico" />
+              <a href="https://gmail.com">Gmail</a>
+            </div>
+            <div class="link-container">
+              <img class="favicon" src="https://ssl.gstatic.com/docs/spreadsheets/favicon.ico" />
+              <a href="https://sheets.google.com">Sheets</a>
+            </div>
+            <div class="link-container">
+              <img class="favicon" src="https://ssl.gstatic.com/keep/icon_128.png" />
+              <a href="https://keep.google.com">Keep</a>
+            </div>
+            <div class="link-container">
+              <img class="favicon" src="https://http2.mlstatic.com/ui/navigation/5.7.1/mercadolibre/favicon.ico " />
+              <a href="https://mercadolivre.com">Mercado Livre</a>
+            </div>
+            <div class="link-container">
+              <img class="favicon" src="https://open.scdn.co/cdn/images/favicon32.a19b4f5b.png" />
+              <a href="https://open.spotify.com/">Spotify</a>
+            </div>
           </div>
-          <div class="link-container">
-            <img
-              class="favicon"
-              src="https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon5.ico"
-            />
-            <a href="https://gmail.com">Gmail</a>
-          </div>
-          <div class="link-container">
-            <img
-              class="favicon"
-              src="https://ssl.gstatic.com/docs/spreadsheets/favicon.ico"
-            />
-            <a href="https://sheets.google.com">Sheets</a>
-          </div>
-          <div class="link-container">
-            <img
-              class="favicon"
-              src="https://http2.mlstatic.com/ui/navigation/5.7.1/mercadolibre/favicon.ico "
-            />
-            <a href="https://mercadolivre.com">Mercado Livre</a>
+          <div class="window-body">
+            <div class="link-container">
+              <img class="favicon" src="https://pontosecullum4-01.secullum.com.br/Ponto4Web/Client/build/img/favicon.png" />
+              <a href="https://pontosecullum4-01.secullum.com.br/Ponto4Web/999621030#batidas-manuais">Ponto</a>
+            </div>
+            <div class="link-container">
+              <img class="favicon" src="https://web.whatsapp.com/img/favicon_c5088e888c97ad440a61d247596f88e5.png" />
+              <a href="https://web.whatsapp.com/">WPP</a>
+            </div>
+            <div class="link-container">
+              <img class="favicon" src="https://discord.com/assets/07dca80a102d4149e9736d4b162cff6f.ico" />
+              <a href="https://discord.com/app">Discord</a>
+            </div>
+            <div class="link-container">
+              <img class="favicon" src="https://estatico.xbrain.com.br/GORASTREAMENTO/img/splash/touch-icon-ipad.png" />
+              <a href="https://go.gorastreamentos.com.br/">Go!</a>
+            </div>
           </div>
         </div>
+
       </div>
 
       <div class="window">
@@ -120,22 +174,54 @@
         </div>
         <div class="window-body">
           <div class="link-container">
-            <img class="favicon" src="https://github.com/favicon.ico " />
+            <img class="favicon" src="https://github.com/favicon.ico" />
             <a href="https://github.com">GitHub</a>
           </div>
           <div class="link-container">
-            <img class="favicon" src="https://stackoverflow.com/favicon.ico " />
+            <img class="favicon" src="https://stackoverflow.com/favicon.ico" />
             <a href="https://stackoverflow.com/questions">StackOverflow</a>
           </div>
           <div class="link-container">
-            <img
-              class="favicon"
-              src="https://developer.mozilla.org/favicon.ico "
-            />
+            <img class="favicon" src="https://developer.mozilla.org/favicon.ico" />
             <a href="https://developer.mozilla.org/en-US/">MDN web docs</a>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
+<script>
+  const redMineSearch = document.getElementById('redmine-search');
+  redMineSearch.addEventListener('keyup', function (e) {
+    if ((e.which || e.keyCode) == 13) {
+      window.location.replace("https://novoredmine.xbrain.com.br/redmine/issues/" + this.value);
+    }
+  });
+  const gitlabSearch = document.getElementById('gitlab-search');
+  gitlabSearch.addEventListener('keyup', function (e) {
+    if ((e.which || e.keyCode) == 13) {
+      window.location.replace("http://gitlab.xbrain.com.br/dashboard/projects?utf8=%E2%9C%93&sort=latest_activity_desc&name=" + this.value);
+    }
+  });
+
+
+
+/*
+  var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+			var doc = new DOMParser().parseFromString(xmlHttp.responseText, "text/xml");
+			console.log(doc)
+        }
+    }
+    xmlHttp.open("GET", "http://www.simepar.br/prognozweb/simepar/forecast_by_counties/4113700", true); // true for asynchronous
+    xmlHttp.send(null)
+*/
+
+
+
+
+</script>
+
 </html>
